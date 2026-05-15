@@ -1,5 +1,7 @@
 # 🔐 Session Auth - Express.js Authentication Boilerplate
 
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org/) [![Express.js Version](https://img.shields.io/badge/express-5.x-blue)](https://expressjs.com/) [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) [![Tests](https://img.shields.io/badge/tests-jest-brightgreen)](https://jestjs.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/n1kFord/session-auth/pulls)
+
 > 📚 **Educational project** for learning authentication patterns with Express.js, sessions, and CSRF protection.
 
 A production-ready authentication system built with **Express.js**, featuring session-based authentication, CSRF protection, rate limiting, and comprehensive testing. Perfect for learning modern web authentication patterns.
