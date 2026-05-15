@@ -6,7 +6,7 @@
 
 A production-ready authentication system built with **Express.js**, featuring session-based authentication, CSRF protection, rate limiting, and comprehensive testing. Perfect for learning modern web authentication patterns.
 
-[![Tests](https://github.com/n1kFord/session-auth/actions/workflows/test.yml/badge.svg)](https://github.com/n1kFord/session-auth/actions/workflows/test.yml)
+[![Run Tests](https://github.com/n1kFord/session-auth/actions/workflows/test.yml/badge.svg?branch=main&event=push)](https://github.com/n1kFord/session-auth/actions/workflows/test.yml)
 
 ## ✨ **Features**
 
