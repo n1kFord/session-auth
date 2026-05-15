@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: auth-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  redis:
+    image: redis:7-alpine
+    container_name: auth-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    container_name: auth-app
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/authDB
+      - REDIS_CLIENT_URI=redis://redis:6379
+      - REDIS_SECRET=${REDIS_SECRET}
+      - PORT=8080
+    depends_on:
+      - mongo
+      - redis
+
+volumes:
+  mongo-data:
