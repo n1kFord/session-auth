@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
-    "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles"
+    "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles",
+    "test:ci": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles --ci --coverage"
   },
   "keywords": [
     "express",
