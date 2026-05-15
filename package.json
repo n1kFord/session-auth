@@ -1,16 +1,33 @@
 {
   "name": "session-auth",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "🔐 Production-ready authentication boilerplate with Express.js, sessions, CSRF protection, and Redis",
+  "main": "src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
     "test": "NODE_ENV=test jest --runInBand --forceExit --detectOpenHandles"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "express",
+    "authentication",
+    "session",
+    "csrf",
+    "redis",
+    "mongodb",
+    "security",
+    "boilerplate"
+  ],
+  "author": "n1kFord",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1kFord/session-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n1kFord/session-auth/issues"
+  },
+  "homepage": "https://github.com/n1kFord/session-auth#readme",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "connect-redis": "^9.0.0",
