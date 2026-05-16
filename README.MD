@@ -231,20 +231,23 @@ curl -X GET http://localhost:8080/me/ \
 
 ## 🐳 **Docker Support**
 
-Build and run with Docker:
+Run with Docker Compose:
 
 ```bash
-# Build image
-docker build -t session-auth .
-
-# Run container
-docker run -p 8080:8080 --env-file .env session-auth
-```
-
-Or use docker-compose (includes MongoDB and Redis):
-
-```bash
+# Start all services (MongoDB, Redis, and the app)
 docker-compose up -d
+
+# View logs
+docker-compose logs -f app
+
+# Rebuild and start (after code changes)
+docker-compose up -d --build
+
+# Stop all services
+docker-compose down
+
+# Stop and remove volumes (clean database)
+docker-compose down -v
 ```
 
 ## 🧪 **Test Coverage**
